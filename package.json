@@ -1,6 +1,6 @@
 {
   "name": "random-md5-hash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate random md5 hashes randomly",
   "license": "MIT",
   "repository": {
