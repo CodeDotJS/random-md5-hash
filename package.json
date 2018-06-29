@@ -1,0 +1,48 @@
+{
+  "name": "random-md5-hash",
+  "version": "1.0.17",
+  "description": "Generate random md5 hashes randomly",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDotJS/random-md5-hash.git"
+  },
+  "author": "Rishi Giri <rushforlinux@gmail.com> (rishigiri.ml)",
+  "bin": {
+    "rmh": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "random",
+    "md5",
+    "string",
+    "generate",
+    "hash",
+    "hashes",
+    "cli-app"
+  ],
+  "dependencies": {
+    "md5": "^2.2.1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.2.2",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "bugs": {
+    "url": "https://github.com/CodeDotJS/random-md5-hash/issues"
+  },
+  "homepage": "https://github.com/CodeDotJS/random-md5-hash#readme",
+  "main": "cli.js"
+}
