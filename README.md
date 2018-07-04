@@ -43,6 +43,8 @@ $ sudo npm install --global random-md5-hash
   NOTE: no input required for flag -r
 ```
 
+__`NOTE`__ __:__ You don't have to copy the hash because it will automatically get copied. Use `ctrl + v` to paste it wherever you want!
+
 ## Related
 
 - __[`unicode-escape-convert`](https://github.com/CodeDotJS/unicode-escape-convert)__ `:` `Convert local and remote files containing unicode escapes to characters!`
