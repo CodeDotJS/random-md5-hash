@@ -3,6 +3,11 @@
 'use strict';
 
 const md5 = require('md5');
+const cp = require('clipboardy');
+const updateNotifier = require('update-notifier');
+const pkg = require('./package.json');
+
+updateNotifier({pkg}).notify();
 
 const arg = process.argv[2];
 const inp = process.argv[3];
@@ -26,7 +31,9 @@ if (!arg || arg === '-h' || arg === '--help') {
 const base = Math.random().toString(15).substr(10, 20);
 
 if (arg === '-r' || arg === '--random') {
-	console.log(`\n› ${md5(base)} \n`);
+	const data = md5(base);
+	cp.writeSync(data);
+	console.log(`\n› ${data} \n\n› hash copied!\n`);
 }
 
 if (arg === '-c' || arg === '--convert') {
@@ -35,5 +42,7 @@ if (arg === '-c' || arg === '--convert') {
 		process.exit(1);
 	}
 
-	console.log(`\n› ${md5(inp)} \n`);
+	const data = md5(inp);
+	cp.writeSync(data);
+	console.log(`\n› ${data} \n\n› hash copied!\n`);
 }
