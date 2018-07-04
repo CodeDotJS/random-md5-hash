@@ -30,7 +30,9 @@
     "cli-app"
   ],
   "dependencies": {
-    "md5": "^2.2.1"
+    "clipboardy": "^1.2.3",
+    "md5": "^2.2.1",
+    "update-notifier": "^2.5.0"
   },
   "devDependencies": {
     "ava": "*",
